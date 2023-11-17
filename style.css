@@ -1,0 +1,542 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  
+#hero{
+    background-image: url(./resources/images/cover-photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+    background-position: center;
+    top: 0;
+    left: 0;
+    margin-bottom: 0px;
+}
+
+#hero h1{
+    color: hsl(76, 74%, 88%);
+    font-family:  'Lancelot','Courier New', Courier, monospace;
+    font-size: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;    
+    font-weight: bold;
+}
+
+.kacie-lyyn-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 800px;
+}
+
+#hero ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#hero li{
+    list-style: none;
+    text-decoration: none;
+    color: #FFFBEE;
+    font-family: 'Montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    
+}
+
+
+#hero a {
+    text-decoration: none;
+    color: #FFFBEE;
+    margin-top: 0px;
+}
+
+#hero a:hover {
+    text-decoration: none;
+    color: #E9FF4F;
+}
+
+/*Links to portfolio*/
+
+#links-to-portfolio{
+    width: 100%;
+    margin-top: 1000px;
+    left: 0px;
+    height: 600px;
+    width: 100%; 
+    background-color: #161c16;
+    padding: 0;
+    margin-left: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#links-to-portfolio ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#links-to-portfolio li{
+    list-style: none;
+    text-decoration: none;
+    color: #FFFBEE;
+    font-family: 'Montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    text-align: center;
+}
+
+
+
+#links-to-portfolio a{
+    list-style: none;
+    color: #FFFBEE;
+    text-decoration: none;
+    position: relative;
+    border: 3px solid #FFFBEE;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #161c1678;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+    
+}
+
+
+
+
+#links-to-portfolio a:hover{
+background-color: #161c16ce;
+transform: scale(1.1);
+}
+
+#links-to-portfolio img{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+
+}
+
+.img-ctr{
+    background-color: #161c16;
+    width: 350px;
+    height: 350px;
+    /* position: absolute; */
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center; 
+    border: none;
+}
+
+
+
+
+
+
+/*About/contact Me Page links*/
+
+
+
+.offsite-links-container{
+    margin-top: 50px;
+}
+
+#links{
+    width: 100%;
+    left: 0px;
+    height: 700px;
+    width: 100%; 
+    background-color: #161c16;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+img.me-items{
+    height: 500px;
+    border-radius: 50%;
+}
+
+.about-me-container img{
+    border-radius: 50%;
+}
+
+.me-container{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    height: 700px;
+    
+}
+ .about-me-container p{
+    padding-top: 15px;
+    word-spacing: 1px;
+    letter-spacing: .5px;
+    text-align: center;
+ }
+
+.me-container button{
+    font-size: 26px;
+    margin: 30px;
+    color: #FFFBEE;
+    padding: 25px;
+    width: 300px;
+    background-color: #E9FF4F3B;
+    font-family: 'Montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-weight: 400;
+    border-radius: 20px;
+    border: #E9FF4F solid 4px;
+}
+
+.me-container button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease-in-out .3s;
+}
+
+#instagram{
+    display: flex;
+}
+
+
+
+
+
+
+/* Contact Page */
+
+#contact-body {
+    background-color: #161c16;
+}
+
+
+
+.contact-aboutme-container{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-content: center;
+    max-width: 1500px;
+    margin: 0 auto ;
+    width: 100%;
+    padding-top: 40px;
+    
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #E9FF4F;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #E9FF4F; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#E9FF4F;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:#161c16;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background: #e8ff4f5b;; }
+
+.contact-aboutme-container img,
+.contact-aboutme-container p{
+    max-width: 400px;
+}
+
+.contact-aboutme-container p{
+    font-family: 'Montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #FFFBEE;
+}
+
+#contact-body h2{
+    color: #E9FF4F;
+    font-family:  'Lancelot','Courier New', Courier, monospace;
+    letter-spacing: 4px;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-weight: 200px;
+}
+
+.contact-me-container{
+    padding-top: 80px;
+}
+
+
+/* NavBar */
+
+
+
+/* header h3, header h3 a {
+    color: #E9FF4F;
+    font-family:  'Lancelot','Courier New', Courier, monospace;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 200px;
+    text-decoration: none;
+}
+
+.nav-links li, .nav-links a, .nav-links button {
+    font-size: 14px;
+    text-decoration: none;
+    color: #FFFBEE;
+    text-transform: uppercase;
+    font-family: 'Montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: #E9FF4F;
+}
+
+#contact-body header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 45px 6%;
+    color: #E9FF4F;
+}
+
+
+.nav-links button {
+    color: #161c16;
+    padding: 9px 25px;
+    background-color: #E9FF4F;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #e8ff4f5b;
+} */
+
+.navbar ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #161c16;
+    color: #FFFBEE;
+    padding: 30px;
+    margin: 0 30px;
+    
+}
+
+.navbar li {
+    list-style-type: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FFFBEE;
+    font-size: 14px;
+}
+
+.navbar-logo a {
+    color: #E9FF4F;
+    font-family:  'Lancelot','Courier New', Courier, monospace;
+    font-size: 28px;
+}
+
+.navbar-logo {
+    flex: 1;
+    font-size: 1.5 rem;
+    user-select: none;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 200px;
+}
+
+.toggle-nav{
+    display: none;
+}
+
+.nav-links a {
+    transition: all 0.3s ease 0s;
+}
+   
+.nav-links a:hover {
+    color: #E9FF4F;
+ 
+}
+
+
+
+button {
+    color: #161c16;
+    padding: 9px 25px;
+    background-color: #E9FF4F;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 600;
+    font-family: 'Montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #e8ff4f5b;
+}
+
+@media only screen and (max-width: 699px) {
+    #hero{
+        height: 400px;
+    }
+
+    #hero h1{
+        font-size: 90px;
+    }
+
+    #links-to-portfolio{
+        width: 100%;
+        margin-top: 400px;
+        height: 1500px;
+        
+    }
+
+    .img-ctr{
+        margin: 10px;
+    }
+
+    .kacie-lyyn-container{
+        height: 200px;
+    }
+
+    #hero li{
+        font-size: 16px;
+        
+    }
+
+    .me-container{
+        display: block;
+        margin: auto;
+        width: 100%;
+        
+    }
+    img.me-items{
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
+        
+    }
+    .navbar ul {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+
+    .nav-links{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-aboutme-container {
+        display: block;
+        width: 75%;
+        gap: 0;
+    }
+
+    .about-me-container img{
+        width: 300px;
+    }
+
+
+    .contact-me-container h2{
+        margin-left: 20px;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 1500px) and (min-width: 700px) {
+ 
+
+    #links-to-portfolio{
+        width: 100%;
+        margin-top: 1000px;
+        height: 800px;
+        
+    }
+
+
+    
+  }

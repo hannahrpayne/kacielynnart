@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #161c16;
+
+
+}
+
+
+
+.navbar ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #161c16;
+    color: #FFFBEE;
+    padding: 30px;
+    margin: 0 30px;
+    
+}
+
+.navbar li {
+    list-style-type: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FFFBEE;
+    font-size: 14px;
+}
+
+.navbar-logo a {
+    color: #E9FF4F;
+    font-family:  'Lancelot','Courier New', Courier, monospace;
+    font-size: 28px;
+}
+
+.navbar-logo {
+    flex: 1;
+    font-size: 1.5 rem;
+    user-select: none;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 200px;
+}
+
+.toggle-nav{
+    display: none;
+}
+
+.nav-links a {
+    transition: all 0.3s ease 0s;
+}
+   
+.nav-links a:hover {
+    color: #E9FF4F;
+ 
+}
+
+
+
+button {
+    color: #161c16;
+    padding: 9px 25px;
+    background-color: #E9FF4F;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 600;
+    font-family: 'Montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #e8ff4f5b;
+}
+
+
+
+
+/* Main */
+.portfolio-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 40px 0 40px;
+    flex: 1 1 auto;     /* 1 */
+    position: relative;
+    min-width: 1px;
+    max-width: 1900px;
+    margin: 0 auto;
+    z-index: 1;
+    width: 100%;
+    padding: 0 20px 0 20px;
+}
+
+
+.portfolio-container .heading h2 {
+    color: #E9FF4F;
+    font-family:  'Lancelot','Courier New', Courier, monospace;
+    font-size: 80px;
+    font-weight: lighter;
+    margin: 50px 0 50px 0;
+}
+
+.portfolio-container .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.portfolio-container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+
+}
+
+.portfolio-container .box img{
+    width: 100%;
+    padding-bottom: 5px;
+    margin: 6px;
+}
+
+
+@media screen and (max-width: 769px) {
+    .portfolio-container .box {
+        flex-direction: column;
+        padding: 20px;
+        
+    }
+    .portfolio-container .box .dream{
+        width: 100%;
+    
+    }
+
+    .portfolio-container img{
+        padding-top: 10px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+    }
+
+
+    .nav-links{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    /* .active{
+        display: block;
+    } */ 
+}
