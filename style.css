@@ -84,6 +84,8 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
 }
 
 #links-to-portfolio li{
@@ -114,6 +116,7 @@
     background-color: #161c1678;
     transition-duration: .5s;
     transition-timing-function: ease-out;
+    text-decoration: none;
     
 }
 
@@ -129,6 +132,8 @@ transform: scale(1.1);
     width: inherit;
     height: inherit;
     position: absolute;
+    object-position: center;
+    object-fit: cover;
 
 }
 
@@ -184,6 +189,11 @@ img.me-items{
     gap: 200px;
     height: 700px;
     
+}
+
+.me-container li {
+    list-style: none;
+    text-decoration: none;
 }
  .about-me-container p{
     padding-top: 15px;
