@@ -68,13 +68,13 @@ button:hover {
 
 
 
-.navbar ul {
+/* .navbar ul {
     display: flex;
     width: 100%;
     align-items: center;
     background-color: #161c16;
     color: #FFFBEE;
-    padding: 30px;
+    
     
 }
 
@@ -139,8 +139,83 @@ button {
 
 button:hover {
     background-color: #e8ff4f5b;
+} */
+
+.navbar ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #161c16;
+    color: #FFFBEE;
+    padding: 30px;
+    
 }
 
+.navbar li {
+    list-style-type: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FFFBEE;
+    font-size: 14px;
+}
+
+.navbar-logo a {
+    color: #E9FF4F;
+    font-family:  'Lancelot','Courier New', Courier, monospace;
+    font-size: 28px;
+}
+
+.navbar-logo {
+    flex: 1;
+    font-size: 1.5 rem;
+    user-select: none;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 200px;
+    text-align: left;
+}
+
+.toggle-nav{
+    display: none;
+}
+
+.nav-links a {
+    transition: all 0.3s ease 0s;
+}
+   
+.nav-links a:hover {
+    color: #E9FF4F;
+ 
+}
+
+
+
+button {
+    color: #161c16;
+    padding: 9px 25px;
+    background-color: #E9FF4F;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 600;
+    font-family: 'Montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #e8ff4f5b;
+}
 /* Main */
 
 #portfolio-links{
@@ -154,6 +229,7 @@ h1{
     font-family:  'Lancelot','Courier New', Courier, monospace;
     font-size: 80px;
     font-weight: lighter;
+    margin: 50px 0 50px 0;
 }
 
 .image-grid {
@@ -221,30 +297,38 @@ h1{
     .image-grid{
         transform: scale(.8);
     }
+
+    .toggle-nav{
+       display: flex;
+    }
     
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 875px) {
     h1{
         margin-bottom: 0px;
+        font-size: 70px;
     }
 
     #portfolio-links{
         width: 50px;
         margin: auto;
         margin-top: -100px;
+        padding: 0;
     }
     .image-grid{
         --num-cols: 1;
         --row-height: 300px;
         gap: 150px;
-        margin-top: 0px;
+        margin: 0;
+        padding: 0;
     }
     .image-grid > img{
         width: 400px;
         height: 400px;
         object-fit: cover;
-    
+        margin: 0;
+        padding: 0;
     }
 
     .link a {
@@ -262,5 +346,14 @@ h1{
         width: 100%;
         text-align: center;
     }
+    h1{
+        font-size: 60px;
+    }
     
+    
+}
+@media screen and (max-width: 380px) {
+    .image-grid {
+        margin-left: -20px;
+    }
 }

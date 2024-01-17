@@ -16,7 +16,6 @@
     background-color: #161c16;
     color: #FFFBEE;
     padding: 30px;
-    margin: 0 30px;
     
 }
 
@@ -113,6 +112,7 @@ button:hover {
     font-size: 80px;
     font-weight: lighter;
     margin: 50px 0 50px 0;
+    text-transform: uppercase;
 }
 
 .portfolio-container .box {
@@ -151,6 +151,7 @@ button:hover {
         padding-top: 10px;
     }
 
+
     .navbar ul {
         flex-wrap: wrap;
     }
@@ -160,8 +161,9 @@ button:hover {
         display: block;
         width: 100%;
         text-align: center;
+        justify-content: center;
     }
-    /* .active{
-        display: block;
-    } */ 
+    .portfolio-container .heading h2 {
+        font-size: 60px;
+    }
 }
